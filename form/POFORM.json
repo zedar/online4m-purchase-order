@@ -1,0 +1,1178 @@
+{
+  "@class": "pl.bpm4cloud.gui.definition.GuiDefWrapper",
+  "POFORM": {
+    "controlType": "form",
+    "@class": "pl.bpm4cloud.gui.component.def.FormDef",
+    "id": "GDForm_22",
+    "codeName": "POFORM",
+    "cssClass": "form-horizontal",
+    "children": {
+      "GDTBGrid_27": {
+        "controlType": "tbgrid",
+        "@class": "pl.bpm4cloud.gui.component.def.GridDef",
+        "id": "GDTBGrid_27",
+        "codeName": "GDTBGrid_27",
+        "cssClass": "tbg-container",
+        "children": {
+          "ROW_LOGO": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_30",
+            "codeName": "ROW_LOGO",
+            "cssClass": "row underline-top underline-bottom",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_35": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_35",
+                "codeName": "GDTBGridCol_35",
+                "cssClass": "span6",
+                "children": {
+                  "GDTBTypographyBox_50": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_50",
+                    "codeName": "GDTBTypographyBox_50",
+                    "text": "Purchase Order",
+                    "cssClass": "pull-left",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "1",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_50",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_50"
+                  }
+                }
+              },
+              "STATUS_COL": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_347",
+                "codeName": "STATUS_COL",
+                "cssClass": "span6",
+                "children": {
+                  "STATUS": {
+                    "controlType": "tbselectbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.SelectDef",
+                    "id": "GDTBSelectBox_350",
+                    "codeName": "STATUS",
+                    "label": "STATUS",
+                    "dictionary": {
+                      "00": "REGISTRATION",
+                      "01": "PRODUCTION",
+                      "02": "INVOICING",
+                      "03": "COMPLETED",
+                      "04": "VALIDATION"
+                    },
+                    "cssClass": "span3",
+                    "controlGroupCssClass": "control-group no-label pull-right",
+                    "enabled": true,
+                    "taskListColumn": true,
+                    "tooltip": "",
+                    "modelCodeName": "STATUS",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "STATUS"
+                  }
+                }
+              }
+            }
+          },
+          "ROW_OL_HEADER": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_65",
+            "codeName": "ROW_OL_HEADER",
+            "cssClass": "row underline-bottom hidden-phone",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_106": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_106",
+                "codeName": "GDTBGridCol_106",
+                "cssClass": "span3",
+                "children": {
+                  "GDTBTypographyBox_153": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_153",
+                    "codeName": "GDTBTypographyBox_153",
+                    "text": "Product",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "4",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_153",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_153"
+                  }
+                }
+              },
+              "GDTBGridCol_91": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_91",
+                "codeName": "GDTBGridCol_91",
+                "cssClass": "span2",
+                "children": {
+                  "GDTBTypographyBox_174": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_174",
+                    "codeName": "GDTBTypographyBox_174",
+                    "text": "Unit price",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "4",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_174",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_174"
+                  }
+                }
+              },
+              "GDTBGridCol_101": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_101",
+                "codeName": "GDTBGridCol_101",
+                "cssClass": "span1",
+                "children": {
+                  "GDTBTypographyBox_197": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_197",
+                    "codeName": "GDTBTypographyBox_197",
+                    "text": "Quantity",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "4",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_197",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_197"
+                  }
+                }
+              },
+              "GDTBGridCol_94": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_94",
+                "codeName": "GDTBGridCol_94",
+                "cssClass": "span2",
+                "children": {
+                  "GDTBTypographyBox_208": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_208",
+                    "codeName": "GDTBTypographyBox_208",
+                    "text": "Net price",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "4",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_208",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_208"
+                  }
+                }
+              },
+              "GDTBGridCol_231": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_231",
+                "codeName": "GDTBGridCol_231",
+                "cssClass": "span2",
+                "children": {
+                  "GDTBTypographyBox_234": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_234",
+                    "codeName": "GDTBTypographyBox_234",
+                    "text": "Gross price",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "4",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_234",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_234"
+                  }
+                }
+              },
+              "GDTBGridCol_75": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_75",
+                "codeName": "GDTBGridCol_75",
+                "cssClass": "span2",
+                "children": {
+                  "PROCESS_ID": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_73",
+                    "codeName": "PROCESS_ID",
+                    "text": "P.O. number: ",
+                    "cssClass": "pull-left",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "4",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_73",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_73"
+                  }
+                }
+              }
+            }
+          },
+          "ROW_OL": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_31",
+            "codeName": "ROW_OL",
+            "cssClass": "row underline-bottom",
+            "collectionType": "LIST",
+            "children": {
+              "GDTBGridCol_65": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_65",
+                "codeName": "GDTBGridCol_65",
+                "cssClass": "span12",
+                "children": {
+                  "GDTBGridRow_68": {
+                    "controlType": "tbgridrow",
+                    "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+                    "id": "GDTBGridRow_68",
+                    "codeName": "GDTBGridRow_68",
+                    "cssClass": "row",
+                    "collectionType": "NONE",
+                    "children": {
+                      "OL_C_PRODUCT": {
+                        "controlType": "tbgridcol",
+                        "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                        "id": "GDTBGridCol_138",
+                        "codeName": "OL_C_PRODUCT",
+                        "cssClass": "span3",
+                        "children": {
+                          "OL_PRODUCT": {
+                            "controlType": "tbselectbox",
+                            "@class": "pl.bpm4cloud.gui.component.def.SelectDef",
+                            "id": "GDTBSelectBox_253",
+                            "codeName": "OL_PRODUCT",
+                            "label": "Product",
+                            "dictionary": {
+                              "P00": "-- Select product --",
+                              "P01": "Product 01",
+                              "P02": "Product 02",
+                              "P03": "Product 03"
+                            },
+                            "cssClass": "span3",
+                            "controlGroupCssClass": "control-group label-visible-phone",
+                            "enabled": true,
+                            "taskListColumn": false,
+                            "tooltip": "",
+                            "modelCodeName": "OL_PRODUCT",
+                            "modelStrategy": "init",
+                            "prevModelCodeName": "OL_PRODUCT"
+                          }
+                        }
+                      },
+                      "OL_C_PRICE": {
+                        "controlType": "tbgridcol",
+                        "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                        "id": "GDTBGridCol_141",
+                        "codeName": "OL_C_PRICE",
+                        "cssClass": "span2",
+                        "children": {
+                          "OL_PRICE": {
+                            "controlType": "tbcurrencybox",
+                            "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                            "id": "GDTBCurrencyBox_64",
+                            "codeName": "OL_PRICE",
+                            "label": "Currency box label",
+                            "currency": "EUR",
+                            "cssClass": "input-small",
+                            "controlGroupCssClass": "control-group label-visible-phone",
+                            "enabled": true,
+                            "taskListColumn": false,
+                            "tooltip": "",
+                            "errorMessage": "",
+                            "modelCodeName": "OL_PRICE",
+                            "modelStrategy": "init",
+                            "prevModelCodeName": "OL_PRICE"
+                          }
+                        }
+                      },
+                      "OL_C_AMOUNT": {
+                        "controlType": "tbgridcol",
+                        "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                        "id": "GDTBGridCol_144",
+                        "codeName": "OL_C_AMOUNT",
+                        "cssClass": "span1",
+                        "children": {
+                          "OL_AMOUNT": {
+                            "controlType": "tbnumberbox",
+                            "@class": "pl.bpm4cloud.gui.component.def.NumberInputDef",
+                            "id": "GDTBNumberBox_248",
+                            "codeName": "OL_AMOUNT",
+                            "label": "Number box label",
+                            "cssClass": "span1",
+                            "controlGroupCssClass": "control-group label-visible-phone",
+                            "minValue": "",
+                            "maxValue": "",
+                            "pattern": "",
+                            "enabled": true,
+                            "taskListColumn": false,
+                            "errorMessage": "",
+                            "tooltip": "",
+                            "modelCodeName": "OL_AMOUNT",
+                            "modelStrategy": "init",
+                            "prevModelCodeName": "OL_AMOUNT"
+                          }
+                        }
+                      },
+                      "OL_C_NET_PRICE": {
+                        "controlType": "tbgridcol",
+                        "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                        "id": "GDTBGridCol_147",
+                        "codeName": "OL_C_NET_PRICE",
+                        "cssClass": "span2",
+                        "children": {
+                          "OL_NET_PRICE": {
+                            "controlType": "tbcurrencybox",
+                            "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                            "id": "GDTBCurrencyBox_277",
+                            "codeName": "OL_NET_PRICE",
+                            "label": "Currency box label",
+                            "currency": "EUR",
+                            "cssClass": "input-small",
+                            "controlGroupCssClass": "control-group label-visible-phone",
+                            "enabled": true,
+                            "taskListColumn": false,
+                            "tooltip": "",
+                            "errorMessage": "",
+                            "modelCodeName": "OL_NET_PRICE",
+                            "modelStrategy": "init",
+                            "prevModelCodeName": "OL_NET_PRICE"
+                          }
+                        }
+                      },
+                      "OL_C_GROSS_PRICE": {
+                        "controlType": "tbgridcol",
+                        "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                        "id": "GDTBGridCol_247",
+                        "codeName": "OL_C_GROSS_PRICE",
+                        "cssClass": "span2",
+                        "children": {
+                          "OL_GROSS_PRICE": {
+                            "controlType": "tbcurrencybox",
+                            "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                            "id": "GDTBCurrencyBox_60",
+                            "codeName": "OL_GROSS_PRICE",
+                            "label": "Currency box label",
+                            "currency": "EUR",
+                            "cssClass": "input-small",
+                            "controlGroupCssClass": "control-group label-visible-phone",
+                            "enabled": true,
+                            "taskListColumn": false,
+                            "tooltip": "",
+                            "errorMessage": "",
+                            "modelCodeName": "OL_GROSS_PRICE",
+                            "modelStrategy": "init",
+                            "prevModelCodeName": "OL_GROSS_PRICE"
+                          }
+                        }
+                      },
+                      "OL_C_ACTION": {
+                        "controlType": "tbgridcol",
+                        "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                        "id": "GDTBGridCol_78",
+                        "codeName": "OL_C_ACTION",
+                        "cssClass": "span2",
+                        "children": {
+                          "DEL_OL": {
+                            "controlType": "tbbutton",
+                            "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                            "id": "GDTBButton_86",
+                            "codeName": "DEL_OL",
+                            "label": "Remove",
+                            "cssClass": "btn btn-danger",
+                            "iconClass": "",
+                            "tooltip": "",
+                            "modelCodeName": "GDTBButton_86",
+                            "modelStrategy": "init",
+                            "prevModelCodeName": "GDTBButton_86"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "GDTBGridRow_72": {
+                    "controlType": "tbgridrow",
+                    "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+                    "id": "GDTBGridRow_72",
+                    "codeName": "GDTBGridRow_72",
+                    "cssClass": "row",
+                    "collectionType": "NONE",
+                    "children": {
+                      "OL_C_DESCR": {
+                        "controlType": "tbgridcol",
+                        "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                        "id": "GDTBGridCol_150",
+                        "codeName": "OL_C_DESCR",
+                        "cssClass": "span6",
+                        "children": {
+                          "OL_DESCR": {
+                            "controlType": "tbtextarea",
+                            "@class": "pl.bpm4cloud.gui.component.def.TextAreaInputDef",
+                            "id": "GDTBTextArea_95",
+                            "codeName": "OL_DESCR",
+                            "label": "Text area label",
+                            "cssClass": "span6",
+                            "controlGroupCssClass": "control-group no-label",
+                            "rows": "2",
+                            "enabled": true,
+                            "tooltip": "",
+                            "modelCodeName": "OL_DESCR",
+                            "modelStrategy": "init",
+                            "prevModelCodeName": "OL_DESCR"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ROW_OL_SUMMARY": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_247",
+            "codeName": "ROW_OL_SUMMARY",
+            "cssClass": "row underline-bottom",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_252": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_252",
+                "codeName": "GDTBGridCol_252",
+                "cssClass": "span6 hidden-phone",
+                "children": {
+                  "GDTBTypographyBox_22": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_22",
+                    "codeName": "GDTBTypographyBox_22",
+                    "text": "Product total price",
+                    "cssClass": "pull-right",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "3",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_22",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_22"
+                  }
+                }
+              },
+              "GDTBGridCol_255": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_255",
+                "codeName": "GDTBGridCol_255",
+                "cssClass": "span2",
+                "children": {
+                  "NET_PRICE": {
+                    "controlType": "tbcurrencybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                    "id": "GDTBCurrencyBox_264",
+                    "codeName": "NET_PRICE",
+                    "label": "Total net price",
+                    "currency": "EUR",
+                    "cssClass": "input-small",
+                    "controlGroupCssClass": "control-group label-visible-phone",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "errorMessage": "",
+                    "modelCodeName": "NET_PRICE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "NET_PRICE"
+                  }
+                }
+              },
+              "GDTBGridCol_258": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_258",
+                "codeName": "GDTBGridCol_258",
+                "cssClass": "span2",
+                "children": {
+                  "GROSS_PRICE": {
+                    "controlType": "tbcurrencybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                    "id": "GDTBCurrencyBox_278",
+                    "codeName": "GROSS_PRICE",
+                    "label": "Total gross price",
+                    "currency": "EUR",
+                    "cssClass": "input-small",
+                    "controlGroupCssClass": "control-group label-visible-phone",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "errorMessage": "",
+                    "modelCodeName": "GROSS_PRICE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GROSS_PRICE"
+                  }
+                }
+              },
+              "GDTBGridCol_261": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_261",
+                "codeName": "GDTBGridCol_261",
+                "cssClass": "span2",
+                "children": {
+                  "ADD_OL": {
+                    "controlType": "tbbutton",
+                    "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                    "id": "GDTBButton_291",
+                    "codeName": "ADD_OL",
+                    "label": "Add product",
+                    "cssClass": "btn btn-primary",
+                    "iconClass": "",
+                    "tooltip": "",
+                    "modelCodeName": "GDTBButton_291",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBButton_291"
+                  }
+                }
+              }
+            }
+          },
+          "GDTBGridRow_24": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_24",
+            "codeName": "GDTBGridRow_24",
+            "cssClass": "row underline-bottom",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_39": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_39",
+                "codeName": "GDTBGridCol_39",
+                "cssClass": "span8",
+                "children": {
+                  "GDTBTypographyBox_67": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_67",
+                    "codeName": "GDTBTypographyBox_67",
+                    "text": "Shipping",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "3",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_67",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_67"
+                  },
+                  "SHIPPING_METHOD": {
+                    "controlType": "tbselectbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.SelectDef",
+                    "id": "GDTBSelectBox_78",
+                    "codeName": "SHIPPING_METHOD",
+                    "label": "Method",
+                    "dictionary": {
+                      "00": "-- Select --",
+                      "CU": "Courier",
+                      "PC": "Personal completion",
+                      "CT": "Car transport"
+                    },
+                    "cssClass": "span3",
+                    "controlGroupCssClass": "control-group",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "SHIPPING_METHOD",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "SHIPPING_METHOD"
+                  }
+                }
+              },
+              "SHIPPING_PRICE_COL": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_45",
+                "codeName": "SHIPPING_PRICE_COL",
+                "cssClass": "span4",
+                "children": {
+                  "GDTBTypographyBox_125": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_125",
+                    "codeName": "GDTBTypographyBox_125",
+                    "text": "Shipping price",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "3",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_125",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_125"
+                  },
+                  "SHIPPING_PRICE": {
+                    "controlType": "tbcurrencybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                    "id": "GDTBCurrencyBox_54",
+                    "codeName": "SHIPPING_PRICE",
+                    "label": "Currency box label",
+                    "currency": "EUR",
+                    "cssClass": "input-small",
+                    "controlGroupCssClass": "control-group no-label",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "errorMessage": "",
+                    "modelCodeName": "SHIPPING_PRICE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "SHIPPING_PRICE"
+                  }
+                }
+              }
+            }
+          },
+          "GDTBGridRow_208": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_208",
+            "codeName": "GDTBGridRow_208",
+            "cssClass": "row underline-bottom",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_213": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_213",
+                "codeName": "GDTBGridCol_213",
+                "cssClass": "span8",
+                "children": {
+                  "GDTBTypographyBox_216": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_216",
+                    "codeName": "GDTBTypographyBox_216",
+                    "text": "Total price",
+                    "cssClass": "pull-right",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "3",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_216",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_216"
+                  }
+                }
+              },
+              "GDTBGridCol_227": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_227",
+                "codeName": "GDTBGridCol_227",
+                "cssClass": "span2",
+                "children": {
+                  "TOTAL_PRICE": {
+                    "controlType": "tbcurrencybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                    "id": "GDTBCurrencyBox_259",
+                    "codeName": "TOTAL_PRICE",
+                    "label": "Currency box label",
+                    "currency": "EUR",
+                    "cssClass": "input-small",
+                    "controlGroupCssClass": "control-group no-label",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "errorMessage": "",
+                    "modelCodeName": "TOTAL_PRICE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "TOTAL_PRICE"
+                  }
+                }
+              }
+            }
+          },
+          "GDTBGridRow_22": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_22",
+            "codeName": "GDTBGridRow_22",
+            "cssClass": "row underline-bottom",
+            "collectionType": "NONE",
+            "children": {
+              "INVOICE_DATA": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_30",
+                "codeName": "INVOICE_DATA",
+                "cssClass": "span6",
+                "children": {
+                  "GDTBTypographyBox_41": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_41",
+                    "codeName": "GDTBTypographyBox_41",
+                    "text": "Invoice data",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "3",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_41",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_41"
+                  },
+                  "NAME1": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_22",
+                    "codeName": "NAME1",
+                    "label": "First name/Name 1",
+                    "cssClass": "span3",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "NAME1",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "NAME1"
+                  },
+                  "NAME2": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_34",
+                    "codeName": "NAME2",
+                    "label": "Last name/Name 2",
+                    "cssClass": "span3",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "NAME2",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "NAME2"
+                  },
+                  "NIP": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_46",
+                    "codeName": "NIP",
+                    "label": "NIP",
+                    "cssClass": "span2",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "999-99-99-999",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "NIP",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "NIP"
+                  },
+                  "MOBILE": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_72",
+                    "codeName": "MOBILE",
+                    "label": "Mobile phone",
+                    "cssClass": "span2",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "(999)999999999",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "MOBILE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "MOBILE"
+                  },
+                  "EMAIL": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_84",
+                    "codeName": "EMAIL",
+                    "label": "EMAIL",
+                    "cssClass": "span3",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "EMAIL",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "EMAIL"
+                  },
+                  "STREET": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_108",
+                    "codeName": "STREET",
+                    "label": "Street",
+                    "cssClass": "input-xlarge",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "STREET",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "STREET"
+                  },
+                  "HOUSE": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_120",
+                    "codeName": "HOUSE",
+                    "label": "Building number",
+                    "cssClass": "input-mini",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "HOUSE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "HOUSE"
+                  },
+                  "POSTAL": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_96",
+                    "codeName": "POSTAL",
+                    "label": "Postal code",
+                    "cssClass": "input-mini",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "99-999",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "POSTAL",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "POSTAL"
+                  },
+                  "CITY": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_135",
+                    "codeName": "CITY",
+                    "label": "City/Postal",
+                    "cssClass": "input-xlarge",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "CITY",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "CITY"
+                  }
+                }
+              },
+              "SHIPPING_ADDRESS": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_36",
+                "codeName": "SHIPPING_ADDRESS",
+                "cssClass": "span6",
+                "children": {
+                  "GDTBTypographyBox_72": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_72",
+                    "codeName": "GDTBTypographyBox_72",
+                    "text": "Shipping address",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "3",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_72",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_72"
+                  },
+                  "SADDR_IS_DIFFERENT": {
+                    "controlType": "tbcheckbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CheckBoxGroupDef",
+                    "id": "GDTBCheckBox_296",
+                    "codeName": "SADDR_IS_DIFFERENT",
+                    "label": "",
+                    "dictionary": {
+                      "1": "Different address for correspondence?"
+                    },
+                    "cssClass": "",
+                    "controlGroupCssClass": "control-group",
+                    "groupName": "",
+                    "enabled": true,
+                    "tooltip": "",
+                    "modelCodeName": "SADDR_IS_DIFFERENT",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "SADDR_IS_DIFFERENT",
+                    "children": {}
+                  },
+                  "SADDR_POSTAL": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_185",
+                    "codeName": "SADDR_POSTAL",
+                    "label": "Postal code",
+                    "cssClass": "input-mini",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "99-999",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "SADDR_POSTAL",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "SADDR_POSTAL"
+                  },
+                  "SADDR_STREET": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_219",
+                    "codeName": "SADDR_STREET",
+                    "label": "Street",
+                    "cssClass": "input-xlarge",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "SADDR_STREET",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "SADDR_STREET"
+                  },
+                  "SADDR_CITY": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_284",
+                    "codeName": "SADDR_CITY",
+                    "label": "City/Postal",
+                    "cssClass": "input-xlarge",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "SADDR_CITY",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "SADDR_CITY"
+                  },
+                  "SADDR_HOUSE": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_272",
+                    "codeName": "SADDR_HOUSE",
+                    "label": "Bulding number",
+                    "cssClass": "input-mini",
+                    "controlGroupCssClass": "control-group",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "SADDR_HOUSE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "SADDR_HOUSE"
+                  }
+                }
+              }
+            }
+          },
+          "GDTBGridRow_317": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_317",
+            "codeName": "GDTBGridRow_317",
+            "cssClass": "row underline-bottom",
+            "collectionType": "NONE",
+            "children": {
+              "PAYMENT_METHOD_COL": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_293",
+                "codeName": "PAYMENT_METHOD_COL",
+                "cssClass": "span6",
+                "children": {
+                  "GDTBTypographyBox_298": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_298",
+                    "codeName": "GDTBTypographyBox_298",
+                    "text": "Payment",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "3",
+                    "paragraph": false,
+                    "modelCodeName": "GDTBTypographyBox_298",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_298"
+                  },
+                  "PAYMENT_METHOD": {
+                    "controlType": "tbselectbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.SelectDef",
+                    "id": "GDTBSelectBox_309",
+                    "codeName": "PAYMENT_METHOD",
+                    "label": "Method",
+                    "dictionary": {
+                      "0": "-- Select --",
+                      "CH": "Cash",
+                      "BT": "Bank transfer",
+                      "IV": "Invoice"
+                    },
+                    "cssClass": "span3",
+                    "controlGroupCssClass": "control-group",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "modelCodeName": "PAYMENT_METHOD",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "PAYMENT_METHOD"
+                  }
+                }
+              },
+              "PAYMENT_COL": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_344",
+                "codeName": "PAYMENT_COL",
+                "cssClass": "span6",
+                "children": {
+                  "ADVANCE_PAYMENT": {
+                    "controlType": "tbcurrencybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                    "id": "GDTBCurrencyBox_406",
+                    "codeName": "ADVANCE_PAYMENT",
+                    "label": "Advance payment",
+                    "currency": "EUR",
+                    "cssClass": "input-small",
+                    "controlGroupCssClass": "control-group",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "errorMessage": "",
+                    "modelCodeName": "ADVANCE_PAYMENT",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "ADVANCE_PAYMENT"
+                  },
+                  "REMAINING_PAYMENT": {
+                    "controlType": "tbcurrencybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CurrencyInputDef",
+                    "id": "GDTBCurrencyBox_443",
+                    "codeName": "REMAINING_PAYMENT",
+                    "label": "Remaining payment",
+                    "currency": "EUR",
+                    "cssClass": "input-small",
+                    "controlGroupCssClass": "control-group",
+                    "enabled": true,
+                    "taskListColumn": false,
+                    "tooltip": "",
+                    "errorMessage": "",
+                    "modelCodeName": "REMAINING_PAYMENT",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "REMAINING_PAYMENT"
+                  }
+                }
+              }
+            }
+          },
+          "GDTBGridRow_521": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_521",
+            "codeName": "GDTBGridRow_521",
+            "cssClass": "row",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_529": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_529",
+                "codeName": "GDTBGridCol_529",
+                "cssClass": "span12",
+                "children": {
+                  "GDTBButtonGroup_532": {
+                    "controlType": "tbbuttongroup",
+                    "@class": "pl.bpm4cloud.gui.component.def.ButtonGroupDef",
+                    "id": "GDTBButtonGroup_532",
+                    "codeName": "GDTBButtonGroup_532",
+                    "cssClass": "form-actions",
+                    "modelCodeName": "GDTBButtonGroup_532",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBButtonGroup_532",
+                    "children": {
+                      "BTN_SAVE": {
+                        "controlType": "tbbutton",
+                        "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                        "id": "GDTBButton_141",
+                        "codeName": "BTN_SAVE",
+                        "label": "Save order",
+                        "cssClass": "btn-large btn-success",
+                        "iconClass": "",
+                        "tooltip": "",
+                        "modelCodeName": "GDTBButton_141",
+                        "modelStrategy": "init",
+                        "prevModelCodeName": "GDTBButton_141"
+                      },
+                      "BTN_CANCEL": {
+                        "controlType": "tbbutton",
+                        "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                        "id": "GDTBButton_150",
+                        "codeName": "BTN_CANCEL",
+                        "label": "Cancel order",
+                        "cssClass": "btn-large btn-danger",
+                        "iconClass": "",
+                        "tooltip": "",
+                        "modelCodeName": "GDTBButton_150",
+                        "modelStrategy": "init",
+                        "prevModelCodeName": "GDTBButton_150"
+                      },
+                      "BTN_PROCESS": {
+                        "controlType": "tbbutton",
+                        "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                        "id": "GDTBButton_538",
+                        "codeName": "BTN_PROCESS",
+                        "label": "Process order",
+                        "cssClass": "btn-large btn-primary",
+                        "iconClass": "",
+                        "tooltip": "",
+                        "modelCodeName": "GDTBButton_538",
+                        "modelStrategy": "init",
+                        "prevModelCodeName": "GDTBButton_538"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

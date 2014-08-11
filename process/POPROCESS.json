@@ -1,0 +1,116 @@
+{
+  "@class": "pl.bpm4cloud.process.domain.ProcessDef",
+  "codeName": "SDContentPane_22",
+  "version": "1.0",
+  "modelCreationStrategy": "INIT",
+  "startNode": "REGISTRATION",
+  "startRoles": "ROLE_USER",
+  "bb": {
+    "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+    "x": 100,
+    "y": 100
+  },
+  "swimlanes": [
+    {
+      "@class": "pl.bpm4cloud.process.domain.SwimlaneDef",
+      "name": "user",
+      "roles": "ROLE_USER, ROLE_ANONYMOUS"
+    }
+  ],
+  "nodes": [
+    {
+      "@class": "pl.bpm4cloud.process.domain.TaskNodeDef",
+      "name": "PRODUCTION",
+      "defaultForm": "POFORM",
+      "swimlane": "user",
+      "label": "PRODUCTION",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 407,
+        "y": 121
+      },
+      "transitions": [
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toSDCancelState",
+          "to": "SDCancelState"
+        },
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toSHIPPING",
+          "to": "SHIPPING"
+        }
+      ]
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.TaskNodeDef",
+      "name": "SHIPPING",
+      "defaultForm": "POFORM",
+      "swimlane": "user",
+      "label": "SHIPPING",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 650,
+        "y": 158
+      },
+      "transitions": [
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toSDCancelState",
+          "to": "SDCancelState"
+        },
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toSDEndState",
+          "to": "SDEndState"
+        }
+      ]
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.TaskNodeDef",
+      "name": "REGISTRATION",
+      "defaultForm": "POFORM",
+      "swimlane": "user",
+      "label": "REGISTRATION",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 161,
+        "y": 169
+      },
+      "transitions": [
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toSDCancelState",
+          "to": "SDCancelState"
+        },
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toPRODUCTION",
+          "to": "PRODUCTION"
+        }
+      ]
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.EndNodeDef",
+      "name": "SDCancelState",
+      "defaultForm": "POFORM",
+      "swimlane": "user",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 454.9850810769686,
+        "y": 288.46875
+      }
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.EndNodeDef",
+      "name": "SDEndState",
+      "defaultForm": "POFORM",
+      "swimlane": "user",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 790.9850810769686,
+        "y": 107.46875
+      }
+    }
+  ]
+}
